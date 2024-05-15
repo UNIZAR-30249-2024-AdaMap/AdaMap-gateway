@@ -19,6 +19,9 @@ public class Application {
 				.route(p -> p
 						.path("/api/**")
 						.uri("http://localhost:8787/"))
+				.route(p -> p
+						.path("/geoserver/**")
+						.uri("http://localhost:8080/"))
 				.build();
 	}
 }
